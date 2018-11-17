@@ -3,7 +3,7 @@
 @section('content')
 
    <h1>id = {{ $task->id }} 詳細ページ</h1>
-
+    <p>ステータス: {{ $task->title }}</p>
     <p>{{ $task->content }}</p>
     {!! link_to_route('tasks.edit', 'このタスクを編集', ['id' => $task->id]) !!}
     {!! Form::model($task, ['route' => ['tasks.destroy', $task->id], 'method' => 'delete']) !!}
