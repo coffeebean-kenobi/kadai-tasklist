@@ -25,6 +25,6 @@
         </table>
     @endif
     {!! link_to_route('tasks.create', '新規タスクの作成', null, ['class' => 'btn btn-primary']) !!}
-
+<div><b>ステータスは10文字以内、タスクは191文字以内</b></div>
 
 @endsection
